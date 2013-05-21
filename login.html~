@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Войти</title>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+		<link href="css/layout.css" rel="stylesheet">
+		<link href="css/activity.css" rel="stylesheet">
+	</head>
+	<body>
+		<header id="head">
+			<div class="container">
+				<div class="row" id="nav">
+					<div class="span2">
+					</div>
+					<div class="span4">
+						<ul class="nav nav-pills">
+							<li><a href="posts.html">Посты</a></li>
+							<li><a href="topics.html">Темы</a></li>
+							<li><a href="users.html">Люди</a></li>
+						</ul>
+					</div>
+					<div class="span3">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="login.html">Вход</a></li>
+							<li><a href="register.html">Регистрация</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container" id="content">
+			<div class="well login-well">
+				<form>
+					<div class="control-group">
+						<label class="control-label">Эл. почта</label>
+						<div class="controls">
+							<input type="text" class="span3" />
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">Пароль</label>
+						<div class="controls">
+							<input type="text" class="span3" />
+						</div>
+					</div>
+
+					<div class="control-group">
+						<div class="controls">
+							<button type="submit" class="btn btn-primary">Вход</button>
+							или <a href="register.html">Регистрация</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="social-login">
+				<p>Регистрация через:</p>
+				<p>
+					<a href="#" class="btn">ВКонтакте</a>
+					<a href="#" class="btn">Facebook</a>
+				</p>
+			</div>
+
+		</div>
+	</body>
+</html>

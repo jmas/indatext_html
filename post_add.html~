@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Добавить пост</title>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+		<link href="css/layout.css" rel="stylesheet">
+		<link href="css/activity.css" rel="stylesheet">
+	</head>
+	<body>
+		<header id="head">
+			<div class="container">
+				<div class="row" id="nav">
+					<div class="span2">
+					</div>
+					<div class="span4">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="posts.html">Посты</a></li>
+							<li><a href="topics.html">Темы</a></li>
+							<li><a href="users.html">Люди</a></li>
+						</ul>
+					</div>
+					<div class="span3">
+						<ul class="nav nav-pills">
+							<li><a href="profile.html">Муртазин</a></li>
+							<li><a href="#">Выйти</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container" id="content">
+			<div class="row">
+				<div class="span2" id="side">
+					<ol>
+						<li><a href="#">Проверьте</a> &mdash; может подобный пост уже существует;</li>
+						<li>Используйте синтаксис <a href="#">Markdown</a> при составлении текста;</li>
+						<li>Можно выбрать самые читаемые <a href="#">темы</a>.</li>
+					</ol>
+				</div>
+				<div class="span7" id="main">
+
+					<form>
+						<div class="control-group">
+							<div class="controls">
+								<div class="btn-group">
+									<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-calendar"></i> Вопрос <span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#"><i class="icon-question-sign"></i> Вопрос</a></li>
+										<li><a href="#"><i class="icon-briefcase"></i> Работа</a></li>
+										<li><a href="#"><i class="icon-book"></i> Статья</a></li>
+										<li><a href="#"><i class="icon-calendar"></i> Событие</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label">Заголовок</label>
+							<div class="controls">
+								<input type="text" class="span7" />
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label">Текст</label>
+							<div class="controls">
+								<textarea rows="15" class="span7"></textarea>
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label">Темы</label>
+							<div class="controls">
+								<input type="text" class="span7" />
+							</div>
+						</div>
+
+						<div class="control-group">
+							<div class="controls">
+								<button type="submit" class="btn btn-primary">Добавить пост</button>
+								<!--<button type="submit" class="btn">Предпросмотр</button>-->
+								или <a href="posts.html">Вернуться к постам</a>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

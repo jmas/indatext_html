@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Активность</title>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+		<link href="css/layout.css" rel="stylesheet">
+		<link href="css/activity.css" rel="stylesheet">
+	</head>
+	<body>
+		<header id="head">
+			<div class="container">
+				<div class="row" id="nav">
+					<div class="span2">
+					</div>
+					<div class="span4">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="activity.html">Активность</a></li>
+							<li><a href="topics.html">Темы</a></li>
+							<li><a href="users.html">Люди</a></li>
+						</ul>
+					</div>
+					<div class="span3">
+						<ul class="nav nav-pills">
+							<li><a href="login.html">Вход</a></li>
+							<li><a href="register.html">Регистрация</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="headAction">
+					<div class="span2">
+
+					</div>
+					<div class="span7">
+						<!--<p>
+							<a href="#">Войдите</a> или <a href="#">Зарегистрируйтесь</a> чтобы добавить новый пост
+						</p>-->
+						<div class="control-group">
+							<div class="controls">
+								<a href="#" class="btn">Добавить пост</a>
+							</div>
+						</div>
+						<!--<div class="control-group">
+							<div class="controls">
+								<input type="text" class="span5" placeholder="Начните вводить новое сообщение"></textarea>
+							</div>
+						</div>-->
+						<!--<form>
+							<div class="control-group">
+								<div class="controls">
+									<div class="btn-group">
+										<button class="btn dropdown-toggle" data-toggle="dropdown">Обсуждение <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Обсуждение</a></li>
+											<li><a href="#">Работа</a></li>
+											<li><a href="#">Код</a></li>
+											<li><a href="#">Урок</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label">Title:</label>
+								<div class="controls">
+									<input type="text" class="span5"></textarea>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label">message-view:</label>
+								<div class="controls">
+									<textarea rows="3" class="span7"></textarea>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label">Scopes:</label>
+								<div class="controls">
+									<input type="text" class="span7" />
+								</div>
+							</div>
+
+							<div class="control-group">
+								<div class="controls">
+									<button type="submit" class="btn btn-primary">Написать</button>
+									или <a href="#">Отменить</a>
+								</div>
+							</div>
+						</form>-->
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container" id="content">
+			<div class="row">
+				<div class="span2" id="side">
+					<ul class="nav nav-pills nav-stacked">
+						<li class="nav-header">Фильтр</li>
+						<li class="active"><a href="#">Все подряд</a></li>
+						<li><a href="#"><i class="icon-question-sign"></i> Вопросы-ответы</a></li>
+						<li><a href="#"><i class="icon-briefcase"></i> Работа <span class="badge">+8</span></a></li>
+						<li><a href="#"><i class="icon-book"></i> Стати</a></li>
+						<li><a href="#"><i class="icon-calendar"></i> События <span class="badge">+6</span></a></li>
+						<li><a href="#"><i class="icon-inbox"></i> Песочница <span class="badge">+5</span></a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-bookmark"></i> Избранное</a></li>
+						<li><a href="#"><i class="icon-file"></i> Мои посты <span class="badge">2</span></a></li>
+					</ul>
+
+					<form class="search-form">
+						<div class="control-group">
+							<div class="controls">
+								<div class="input-append">
+									<input class="query" id="appendedInputButton" type="text">
+									<button class="btn" type="button"><i class="icon-search"></i></button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="span7" id="main">
+
+					<div class="list-view message-view">
+						<div class="items">
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="view">
+								<div class="name">
+									<i class="icon-question-sign"></i>
+									<a href="#">Сколько необходимо времени чтобы разработать сложное приложение?</a>
+								</div>
+								<div class="scopes">
+									<a href="#" class="scope label label-info">Программирование</a>
+									<a href="#" class="scope label label-info">MySQL</a>
+									<a href="#" class="scope label label-info">PHP</a>
+								</div>
+								<div class="description">
+									<p>Сейчас в крупных городах практически не осталось мест, находящихся вне поля зрения одной или нескольких камер — полицейские и муниципальные камеры на улицах и площадях, частные системы видеонаблюдения в магазинах и кафе, видеорегистраторы в автомобилях, камеры смартфонов, а скоро и Google Glass, и других подобных гаджетов — часто в нашу сторону могут смотреть несколько объективов одновременно. Добавьте к этому функции распознавания лиц в социальных сетях и продвинутые системы видеоаналитики наподобие этой — и получится, что почти каждый наш шаг записывается и анализируется.</p> 
+									<p>Каждое действие порождает противодействие, и в последнее время один за другим стали появляться проекты, цель которых — защититься от «всевидящего ока» или хотя бы привлечь внимания общества к проблеме тотального наблюдения.</p>
+									<p><a href="#" class="btn btn-small">Продолжить чтение&hellip;</a></p>
+								</div>
+								<div class="info">
+									<div class="row">
+										<div class="span2 rating">
+											<a href="#"><i class="icon-minus"></i></a>
+											<span class="badge badge-success">2</span>
+											<a href="#"><i class="icon-plus"></i></a>
+										</div>
+										<div class="span2 user">
+											<a href="#">Микулич</a> <span class="badge">10</span>
+										</div>
+										<div class="span2 fav">
+											<a href="#"><i class="icon-bookmark"></i></a> 10
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pagination">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

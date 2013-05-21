@@ -1,0 +1,311 @@
+body {
+	/*margin:30px 0;*/
+	margin-bottom:60px;
+}
+
+#nav {
+	margin-bottom:15px;
+}
+
+#head {
+	/*border-bottom:1px solid #eee;*/
+	padding-bottom:15px;
+	padding-top:30px;
+	margin-bottom:30px;
+	background-color:#eee;
+}
+
+
+
+.list-view .view {
+	margin-bottom:60px;
+}
+
+
+.tile-view {
+	overflow:hidden;
+	padding:1px;
+}
+
+.tile-view .view {
+	float:left;
+	width:33%;
+	border:1px solid #eee;
+	margin:-1px;
+	background-color:#fff;
+}
+
+@media only screen and (max-width : 1000px) {
+	.tile-view .view {
+		width:50%;
+	}
+}
+
+@media only screen and (max-width : 400px) {
+	.tile-view .view {
+		float:none;
+		width:auto;
+	}
+}
+
+
+.tile-view .view:hover {
+	background-color:#eee;
+}
+
+.tile-view .view-inside {
+	padding:15px;
+}
+
+
+
+.topic-view .view {
+	height:260px;
+}
+
+.topic-view .name {
+	margin-bottom:.7em;
+}
+
+.topic-view .name .label {
+	font-size:120%;
+	line-height:1.2em;
+	padding:4px 8px;
+}
+
+.topic-view .description {
+	font-size:85%;
+	width:100%;
+	height:100px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	margin-bottom:.8em;
+	color:#666;
+}
+
+.topic-view .post-count,
+.topic-view .follow-count {
+	font-size:90%;
+	margin-bottom:.4em;
+	color:#bbb;
+}
+
+.topic-view .follow {
+	margin-top:.6em;
+}
+
+
+
+.topic-profile {
+	margin-bottom:30px;
+	border-bottom:3px solid #eee;
+	padding-bottom:30px;
+}
+
+.topic-profile .name {
+	font-size:130%;
+	margin-bottom:.6em;
+}
+
+.topic-profile .description {
+	font-size:90%;
+	margin-bottom:.6em;
+	color:#666;
+}
+
+.topic-profile .image img {
+	width:120px;
+	height:120px;
+	background-color:#eee;
+}
+
+.topic-profile .image {
+	margin-bottom:.8em;
+}
+
+.topic-profile .post-count,
+.topic-profile .follow-count {
+	font-size:90%;
+	color:#bbb;
+}
+
+.topic-profile .follow {
+	margin-top:.8em;
+}
+
+
+
+
+.user-view .view {
+	width:50%;
+	height:150px;
+}
+
+@media only screen and (max-width : 900px) {
+	.user-view .view {
+		float:none;
+		width:auto;
+	}
+}
+
+.user-view .image {
+	float:left;
+	width:60px;
+	height:60px;
+	/*overflow:hidden;
+	border-radius:100%;*/
+}
+
+.user-view .image img {
+	width:60px;
+	height:60px;
+	background-color:#eee;
+}
+
+.user-view .info {
+	margin-left:75px;
+}
+
+.user-view .name {
+	font-size:120%;
+	margin-bottom:.4em;
+}
+
+.user-view .post-count,
+.user-view .follow-count {
+	font-size:90%;
+	color:#bbb;
+}
+
+.user-view .follow {
+	margin-top:.4em;
+}
+
+
+.post-view {
+	margin-bottom:30px;
+}
+
+.post-view .name {
+	font-size:180%;
+	margin-bottom:.4em;
+	line-height:1.1em;
+}
+
+.post-view .name i[class^="icon-"] {
+	vertical-align:baseline;
+}
+
+.post-view .scopes {
+	color:#bbb;
+	margin-bottom:.5em;
+}
+
+.post-view .more {
+	font-size:90%;
+}
+
+.post-view .info {
+	border:1px solid #eee;
+	border-radius:5px;
+	padding:8px 15px;
+	font-size:90%;
+}
+
+
+.nav-pills .divider {
+	border-top:1px solid #eee;
+}
+
+
+.search-form .query {
+	width:120px;
+}
+
+
+
+.login-well {
+	width:270px;
+	margin:0 auto;
+}
+
+.social-login {
+	text-align:center;
+	padding:20px 0 0 0;
+}
+
+
+
+.user-profile {
+	margin-bottom:30px;
+	border-bottom:3px solid #eee;
+	padding-bottom:30px;
+}
+
+.user-profile .name {
+	font-size:130%;
+	margin-bottom:.6em;
+}
+
+.user-profile .image img {
+	width:120px;
+	height:120px;
+	background-color:#eee;
+}
+
+.user-profile .image {
+	margin-bottom:.8em;
+}
+
+.user-profile .post-count,
+.user-profile .follow-count {
+	font-size:90%;
+	color:#bbb;
+}
+
+.user-profile .follow {
+	margin-top:.8em;
+}
+
+
+
+.comment-view {
+	margin-bottom:30px;
+}
+
+.comment-view .view {
+	position:relative;
+	margin-bottom:30px;
+}
+
+.comment-view .view.level-2 {
+	margin-left:30px;
+}
+
+.comment-view .info {
+	color:#bbb;
+	font-size:90%;
+	margin-bottom:.8em;
+}
+
+.comment-view .author {
+	margin-right:2em;
+}
+
+.comment-view .author img {
+	vertical-align:middle;
+}
+
+.comment-view .date {
+	margin-right:2em;
+}
+
+.comment-view .answer {
+	font-size:90%;
+}
+
+.comment-view .rating {
+	position:absolute;
+	right:0;
+	top:0;
+}
